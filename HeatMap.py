@@ -2,7 +2,7 @@ from PIL import Image, ImageDraw, ImageFont
 
 
 class HeatMap:
-    def __init__(self, directory='images'):
+    def __init__(self, directory='images/'):
         # keyboard.png is the base image
         self.image = Image.open('keyboard.png').convert('RGBA')
         self.draw = ImageDraw.Draw(self.image)
